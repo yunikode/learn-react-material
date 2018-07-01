@@ -1,11 +1,25 @@
 import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core/styles'
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton
+} from '@material-ui/core'
+import MenuIcon from '@material-ui/icons/Menu'
 
 class Header extends React.Component {
   render() {
     return (
-      <Fragment>
-        <h1>Header</h1>
-      </Fragment>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="title" color="inherit">
+            Ex(e|o)rsize
+          </Typography>
+        </Toolbar>
+      </AppBar>
     )
   }
 }

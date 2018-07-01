@@ -1,8 +1,17 @@
 import React from 'react'
+import { Paper, Tabs, Tab } from '@material-ui/core'
 
 class Footer extends React.Component {
   render() {
-    return <h1>Footer</h1>
+    return (
+      <Paper>
+        <Tabs value={0} indicatorColor="primary" textColor="primary" centered>
+          <Tab label="Item One" />
+          <Tab label="Item Two" />
+          <Tab label="Item Three" />
+        </Tabs>
+      </Paper>
+    )
   }
 }
 
